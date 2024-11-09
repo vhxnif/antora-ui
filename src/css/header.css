@@ -2,21 +2,25 @@ html.is-clipped--navbar {
   overflow-y: auto;
 }
 
-body {
-  padding-top: var(--navbar-height);
+.navbar {
+  top: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.navbar {
-  background: var(--navbar-background);
-  color: var(--navbar-font-color);
-  font-size: calc(16 / var(--rem-base) * 1rem);
-  height: var(--navbar-height);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: var(--z-index-navbar);
-  padding: 0;
-  border-bottom: 1px solid var(--nav-panel-divider-color);
+@media screen and (min-width: 1024px) {
+  body {
+    padding-top: var(--navbar-height);
+  }
+  .navbar {
+    background: var(--navbar-background);
+    color: var(--navbar-font-color);
+    font-size: calc(16 / var(--rem-base) * 1rem);
+    position: fixed;
+    height: var(--navbar-height);
+    z-index: var(--z-index-navbar);
+    border-bottom: 1px solid var(--nav-panel-divider-color);
+  }
 }
 
 .navbar a {
@@ -25,13 +29,6 @@ body {
 
 .navbar-brand {
   display: flex;
-  padding: 0 1rem;
-}
-
-@media screen and (min-width: 1024px) {
-  .navbar-brand {
-    padding: 1rem;
-  }
 }
 
 .navbar-brand .navbar-item:first-child,
@@ -274,9 +271,11 @@ body {
       visibility: hidden;
       transform: translateY(-5px);
     }
+
     1% {
       visibility: visible;
     }
+
     to {
       visibility: visible;
       opacity: 1;
@@ -305,6 +304,7 @@ body {
     color: #111;
     font-size: 0.8rem;
   }
+
   .navbar-dropdown .navbar-item-special {
     padding-bottom: 20px;
     margin-bottom: 1.5rem;

@@ -71,6 +71,7 @@
   .theme-toggler {
     position: absolute;
     right: 0;
-    top: 90px;
+    top: 15px;
+    z-index: 99;
   }
 }

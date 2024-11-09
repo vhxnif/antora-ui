@@ -247,7 +247,7 @@
   /* Nav */
   --nav-background: var(--color-white);
   --nav-border-color: var(--color-gray-10);
-  --nav-line-height: 1.35;
+  --nav-line-height: 1.25;
   --nav-heading-font-color: var(--color-jet-30);
   --nav-muted-color: var(--color-gray-70);
   --nav-panel-divider-color: var(--color-smoke-90);
@@ -311,7 +311,7 @@
   --footer-link-font-color: #111;
 
   /* Dimensions and Positioning */
-  --navbar-height: calc(83 / var(--rem-base) * 1rem);
+  --navbar-height: calc(50 / var(--rem-base) * 1rem);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);
   --drawer-height: var(--toolbar-height);
   --body-top: var(--navbar-height);

@@ -1,6 +1,5 @@
 .nav-container {
   position: fixed;
-  top: var(--navbar-height);
   left: 0;
   width: 100%;
   font-size: calc(17 / var(--rem-base) * 1rem);
@@ -246,7 +245,6 @@ button.browse-version {
   width: 36px;
   margin-left: calc(var(--nav-line-height) * -1em);
   right: 12px;
-  top: 15px;
   border-radius: 4px;
   padding-top: 4px;
 }
@@ -354,7 +352,7 @@ html.dark-theme button.browse-version:hover {
 
 @media screen and (min-width: 1024px) {
   body.nav-sm .nav-container {
-    width: 60px;
+    width: 45px;
     z-index: 800;
   }
 
@@ -382,7 +380,7 @@ html.dark-theme button.browse-version:hover {
     top: auto;
     right: auto;
     margin: 0;
-    margin-left: -5px;
+    margin-left: -13px;
     margin-bottom: 8px;
   }
 
@@ -422,7 +420,6 @@ html.dark-theme button.browse-version:hover {
 
   body.nav-sm .toggle-sm button.nav-toggle {
     display: block;
-    margin-left: 10px;
   }
 }
 
